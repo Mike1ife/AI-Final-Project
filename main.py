@@ -34,9 +34,10 @@ if __name__ == "__main__":
     # map note to index
     Notes_Index_List = Notes_to_Index(Notes_List)
 
+    network_input, network_output = prepare_sequences(Notes_Index_List, n_vocab)
+    model = create_network(network_input, n_vocab)
+
     if train_model:
-        network_input, network_output = prepare_sequences(Notes_Index_List, n_vocab)
-        model = create_network(network_input, n_vocab)
         train(model, network_input, network_output)
         model.load_weights("model_weights.h5")
 
@@ -46,9 +47,7 @@ if __name__ == "__main__":
         eval_input, eval_output = prepare_sequences(eval_Index_List, n_vocab)
 
         eval(model, eval_input, eval_output, cp_Notes_List, n_vocab)
-        make(model, cp_Notes_List, n_vocab)
     else:
-        network_input, network_output = prepare_sequences(Notes_Index_List, n_vocab)
-        model = create_network(network_input, n_vocab)
         model.load_weights("model_weights.h5")
-        make(model, cp_Notes_List, n_vocab)
+
+    make(model, cp_Notes_List, n_vocab)
