@@ -24,8 +24,6 @@ def Get_Argument():
 if __name__ == "__main__":
     # determine whether to get notes from csv and remove frequency
     read_csv, train_model = Get_Argument()
-    print(read_csv)
-    print(train_model)
     # get the list of notes of each song
     Notes_List = Load_Dataset(read_csv)
 
