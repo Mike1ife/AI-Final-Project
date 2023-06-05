@@ -41,7 +41,7 @@ def train(model, network_input, network_output):
     model.fit(
         network_input,
         network_output,
-        epochs=50,
+        epochs=60,
         batch_size=64,
         callbacks=callbacks_list,
     )
@@ -90,10 +90,10 @@ def eval(model, input, output, Notes_List, n_vocab):
 
 def make(model, Notes_List, n_vocab):
     input = []
-    for i in range(0, 15):
+    for i in range(0, 5):
         input.append(random.randrange(n_vocab))
     for i in range(0, 490):
-        a = [input[len(input) - 15 : len(input)]]
+        a = [input[len(input) - 5 : len(input)]]
         temp = prepare_sequences_in(a, n_vocab)
         pred = model.predict(temp)
         max = 0
@@ -133,7 +133,7 @@ def make(model, Notes_List, n_vocab):
 
 def prepare_sequences(notes, n_vocab):
     """Prepare the sequences used by the Neural Network"""
-    sequence_length = 15
+    sequence_length = 5
     network_input = []
     network_output = []
 
@@ -160,7 +160,7 @@ def prepare_sequences(notes, n_vocab):
 
 def prepare_sequences_in(notes, n_vocab):
     """Prepare the sequences used by the Neural Network"""
-    sequence_length = 15
+    sequence_length = 5
     network_input = []
 
     # create input sequences and the corresponding outputs
