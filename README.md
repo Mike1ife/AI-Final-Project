@@ -10,5 +10,6 @@ Contain notes of each file extracted from [Data](https://github.com/Mike1ife/AI-
 ### Argument
 <pre>
 -h                    show this help message and exit
---read-csv            read notes from csv file
+--readcsv             read notes from csv file
+--train               train your own model
 </pre>
