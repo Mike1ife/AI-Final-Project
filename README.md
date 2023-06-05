@@ -1,6 +1,9 @@
 # AI-Final-Project
 Generative AI
 
+### requirements.txt
+All the package you need to run our project
+
 ### Data
 Contain [midi files](http://www.piano-midi.de/midi_files.htm) from each musician
 
