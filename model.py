@@ -128,7 +128,7 @@ def make(model, Notes_List, n_vocab):
         output_notes.append(new_note)
         offset += 0.5
     midi_stream = stream.Stream(output_notes)
-    midi_stream.write("midi", fp="test_outputF.mid")
+    midi_stream.write("midi", fp="test_output.mid")
 
 
 def prepare_sequences(notes, n_vocab):
