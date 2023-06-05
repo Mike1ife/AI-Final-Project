@@ -22,3 +22,6 @@ Contain functions to load midi files as well as notes preprocess
 
 ### model.py
 Contain functions to train, evaluation and generate music
+
+### test_output.mid
+Our generated music
