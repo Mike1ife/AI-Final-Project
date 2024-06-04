@@ -11,7 +11,9 @@ Contain [midi files](http://www.piano-midi.de/midi_files.htm) from each musician
 Contain notes of each file extracted from [Data](https://github.com/Mike1ife/AI-Final-Project/tree/main/Data)
 
 ### Quickstart
+~~~bash
 python main.py [--arg]
+~~~
 
 ### Argument
 <pre>
