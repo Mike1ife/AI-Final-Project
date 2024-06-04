@@ -32,3 +32,7 @@ Our trained model
 ### test_output.mid
 Our generated music
 
+https://github.com/Mike1ife/AI-Final-Project/assets/132564989/6567a581-107f-4070-9818-44482419a2db
+
+
+
