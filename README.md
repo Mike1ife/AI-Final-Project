@@ -28,3 +28,4 @@ Our trained model
 
 ### test_output.mid
 Our generated music
+<audio src="test_output.mid" controls preload></audio>
