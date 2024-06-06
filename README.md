@@ -1,20 +1,40 @@
 # AI-Final-Project
-Generative AI
 
-### requirements.txt
-All the package you need to run our project
+Diverse musical notation generation for piano with fine-tuned Long Short-Term Memory (LSTM)
 
-### Data
-Contain [midi files](http://www.piano-midi.de/midi_files.htm) from each musician
+## Table of Contents
 
-### Note.csv
-Contain notes of each file extracted from [Data](https://github.com/Mike1ife/AI-Final-Project/tree/main/Data)
+- [Installation](#installation)
+- [Data](#data)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Result](#result)
 
-### Quickstart
-~~~bash
+## Installation
+
+To set up this project locally, follow these steps:
+
+1. Clone the repository:
+    ```sh
+    https://github.com/Mike1ife/AI-Final-Project.git
+    ```
+2. Navigate to the project directory:
+    ```sh
+    cd AI-Final-Project
+    ```
+3. Install the required dependencies:
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+## Data
+We obtained [midi files](http://www.piano-midi.de/midi_files.htm) from famous musicians.
+Note.csv contains notes of each file extracted from [Data](https://github.com/Mike1ife/AI-Final-Project/tree/main/Data)
+
+## Usage
+```sh
 python main.py [--arg]
-~~~
-
+```
 ### Argument
 <pre>
 -h                    show this help message and exit
@@ -22,18 +42,12 @@ python main.py [--arg]
 --train               train your own model
 </pre>
 
-### preprocess.py
-Contain functions to load midi files as well as notes preprocess
+## Project Structure
+- preprocess.py: Loads midi files and processes notes.
+- model.py: Methods for training, evaluation and music generation.
+- main.py: The main script for running the project.
 
-### model.py
-Contain functions to train, evaluation and generate music
-
-### model_weights.h5
-Our trained model
-
-### test_output.mid
-Our generated music
-
+### Result
 https://github.com/Mike1ife/AI-Final-Project/assets/132564989/6567a581-107f-4070-9818-44482419a2db
 
 
