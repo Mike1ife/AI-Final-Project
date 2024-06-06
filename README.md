@@ -43,9 +43,9 @@ python main.py [--arg]
 </pre>
 
 ## Project Structure
+- main.py: The main script for running the project.
 - preprocess.py: Loads midi files and processes notes.
 - model.py: Methods for training, evaluation and music generation.
-- main.py: The main script for running the project.
 
 ### Result
 https://github.com/Mike1ife/AI-Final-Project/assets/132564989/6567a581-107f-4070-9818-44482419a2db
