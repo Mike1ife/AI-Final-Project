@@ -35,7 +35,7 @@ Note.csv contains notes of each file extracted from [Data](https://github.com/Mi
 ```sh
 python main.py [--arg]
 ```
-### Argument
+### Arguments
 <pre>
 -h                    show this help message and exit
 --readcsv             read notes from csv file
