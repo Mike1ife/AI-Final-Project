@@ -1,4 +1,4 @@
-# AI Fianl Project
+# Piano Notation Generation
 
 Diverse musical notation generation for piano with fine-tuned Long Short-Term Memory (LSTM)
 
